@@ -8,15 +8,32 @@ API feita com FastAPI para gerenciar os produtos de uma doceria. O projeto tem t
 * **SQLAlchemy & Pydantic:** 
 * **PostgreSQL:** 
 * **Pytest:** 
-* **Docker & Docker Compose:** 
+* **Docker & Docker Compose:**
 
-## Instruções para subir o banco de teste com Docker
-Para garantir que os testes rodem num ambiente limpo, a gente sobe a infraestrutura pelo Docker Compose:
+## 🛠️ Preparação do Ambiente
+Antes de rodar a API ou os testes, configure o ambiente virtual e instale as dependências:
 
-1. Confirme se o Docker está rodando no seu computador.
-2. No terminal, na pasta raiz do projeto, rode o comando:
+1. **Crie e ative o ambiente virtual:**
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+
+## Instale as dependências
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 🐳 Instruções de Infraestrutura (Docker)
+O projeto utiliza dois bancos de dados via Docker para separar o ambiente de desenvolvimento do ambiente de testes(Lembre-se de certificar que o programa Docker está aberto em sua máquina):
+
+* **Para rodar o ambiente de desenvolvimento:**
+  ```bash
+  docker-compose up -d db_dev
+   ```
+**Para rodar o ambiente de testes:**
    ```bash
    docker-compose up -d db_test
+   ```
 
 ## 💻 Comando exato para executar os testes
 Com o banco de testes rodando, é só gerar o relatório de testes e cobertura com esse comando no terminal:
