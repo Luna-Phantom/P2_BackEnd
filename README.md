@@ -29,8 +29,8 @@ O projeto utiliza dois bancos de dados via Docker para separar o ambiente de des
 * **Para rodar o ambiente de desenvolvimento:**
   ```bash
   docker-compose up -d db_dev
-   ```
-**Para rodar o ambiente de testes:**
+  ```
+* **Para rodar o ambiente de testes:**
    ```bash
    docker-compose up -d db_test
    ```
