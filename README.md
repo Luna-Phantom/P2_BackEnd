@@ -53,3 +53,5 @@ Como garantimos que um teste não bagunce o resultado do outro? Usando a fixture
 2. **`dependency_overrides`**: Força a API a usar o banco de testes em vez do banco principal.
 3. **`yield`**: Libera o teste específico para rodar.
 4. **`drop_all`**: Logo que o teste acaba, ela apaga tudo. Assim, o próximo teste sempre pega o banco zerado e sem sujeira.
+
+Dessa forma, cada teste é executado em um ambiente limpo e independente, evitando que dados criados em um teste interfiram nos demais.
