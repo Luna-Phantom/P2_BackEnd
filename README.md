@@ -24,30 +24,7 @@ pytest --cov=main -v
 
 Saída esperada do pytest
 
-============================= test session starts ==============================
-collected 12 items
-
-tests/test_produtos.py::test_listar_produtos_banco_vazio PASSED          [  8%]
-tests/test_produtos.py::test_criar_produto_persistencia PASSED           [ 16%]
-tests/test_produtos.py::test_criar_produto_aparece_na_listagem PASSED    [ 25%]
-tests/test_produtos.py::test_buscar_produto_por_id_sucesso PASSED        [ 33%]
-tests/test_produtos.py::test_buscar_produto_id_inexistente PASSED        [ 41%]
-tests/test_produtos.py::test_deletar_produto_sucesso PASSED              [ 50%]
-tests/test_produtos.py::test_deletar_produto_confirmar_remocao PASSED    [ 58%]
-tests/test_produtos.py::test_deletar_produto_inexistente PASSED          [ 66%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido0] PASSED [ 75%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido1] PASSED [ 83%]
-tests/test_produtos.py::test_criar_produto_payload_invalido[payload_invalido2] PASSED [ 91%]
-tests/test_produtos.py::test_validar_isolamento_do_banco PASSED          [100%]
-
----------- coverage: platform win32, python 3.13.14-final-0 -----------
-Name      Stmts   Miss  Cover
------------------------------
-main.py      56      4    93%
------------------------------
-TOTAL        56      4    93%
-
-======================== 12 passed, 2 warnings in 0.78s ========================
+<img width="1919" height="1034" alt="image" src="https://github.com/user-attachments/assets/53894c78-cb24-4ce2-9282-1a6622e28576" />
 
 Explicação: Isolamento entre Testes
 Como garantimos que um teste não bagunce o resultado do outro? Usando a fixture client no arquivo conftest.py. Ela faz o ciclo completo:
