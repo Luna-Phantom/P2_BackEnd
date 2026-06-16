@@ -22,7 +22,8 @@ Para garantir que os testes rodem num ambiente limpo, a gente sobe a infraestrut
 Com o banco de testes rodando, é só gerar o relatório de testes e cobertura com esse comando no terminal:
 
 ```bash
-   pytest --cov=main -v
+pytest --cov=main -v
+```
 
 ## 📊 Saída esperada do pytest
 
